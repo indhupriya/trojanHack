@@ -2,7 +2,7 @@
 
 request_once("dbDetails.php");
 
-$checkUser = 'SELECT * from users where username="$username" and password = "$password"';
+$checkUser = 'SELECT * from users where username="$username"';
 $checkUserResults = $mysqli->query($checkUser);
 
 if($checkUserResults){
@@ -13,5 +13,4 @@ else{
 }
 
 
-?>
-
+?
