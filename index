@@ -24,7 +24,7 @@
        <div class="collapse navbar-collapse" id="hamburger-navigation">
          <div class="navbar-text navbar-right">
            <a class="navbar-link" href="URL here">
-             List your event
+             List your event+
            </a>
          </div>
          <ul class="nav navbar-nav" role="menu">
@@ -33,8 +33,8 @@
            <li class="dropdown">
              <a class="dropdown-toggle" role="button" data-toggle="dropdown">More<span class="caret" /></a>
              <ul class="dropdown-menu">
-               <li><a href="#">Option one</a></li>
-               <li><a href="#">Option two</a></li>
+               <li><a href="#">XXXX</a></li>
+               <li><a href="#">YYYY</a></li>
              </ul>
            </li>
          </ul>
@@ -57,20 +57,122 @@
          <!-- Tab content -->
          <div class="tab-content">
            <div class="active tab-pane fade in" id="allcategories">
-             <h2>Today Oct 11th</h2>
-             <div>Some sample content</div>
+            <!--accordian-->
+             <div class="panel-group" id="accordian">
+	             <div class="panel panel-default">
+		            <div class="panel-heading">
+			            <h4 class="panel-title">
+				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
+					           Today Oct 10th
+				            </a>
+			           </h4>
+		            </div>
+		           <div id="accordian-one" class="panel-collapse collapse in">
+			           <div class="panel-body">
+			       	     <ul>
+                    <li>TrojanHackthon</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   </ul>
+			           </div>
+		           </div>
+	            </div>
+              
+             </div>
            </div>
+          <!--accordian-->
            <div class="tab-pane" id="alltypes">
-             <h2>Today Oct 11th</h2>
-             <div>Some sample content</div>
+          <!--accordian-->
+             <div class="panel-group" id="accordian">
+	             <div class="panel panel-default">
+		            <div class="panel-heading">
+			            <h4 class="panel-title">
+				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
+					           Today Oct 10th
+				            </a>
+			           </h4>
+		            </div>
+		           <div id="accordian-one" class="panel-collapse collapse in">
+			           <div class="panel-body">
+			       	     <ul>
+                    <li>Silicon Beach</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   </ul>
+			           </div>
+		           </div>
+	            </div>
+             </div>
            </div>
+          <!--accordian-->
            <div class="tab-pane" id="free">
-             <h2>Today Oct 11th</h2>
-             <div>Some sample content</div>
+          <!--accordian-->
+             <div class="panel-group" id="accordian">
+	             <div class="panel panel-default">
+		            <div class="panel-heading">
+			            <h4 class="panel-title">
+				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
+					           Today Oct 10th
+				            </a>
+			           </h4>
+		            </div>
+		           <div id="accordian-one" class="panel-collapse collapse in">
+			           <div class="panel-body">
+			       	     <ul>
+                    <li>Steven Innovation showcase</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   </ul>
+			           </div>
+		           </div>
+	            </div>
+             </div>
            </div>
+          <!--accordian-->
            <div class="tab-pane" id="paid">
-             <h2>Today Oct 11th</h2>
-             <div>Some sample content</div>
+            <!--accordian-->
+             <div class="panel-group" id="accordian">
+	             <div class="panel panel-default">
+		            <div class="panel-heading">
+			            <h4 class="panel-title">
+				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
+					           Today Oct 10th
+				            </a>
+			           </h4>
+		            </div>
+		           <div id="accordian-one" class="panel-collapse collapse in">
+			           <div class="panel-body">
+			       	     <ul>
+                    <li>UCLA Hackthon</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   </ul>
+			           </div>
+		           </div>
+	            </div>
+             </div>
+           </div>
+          <!--accordian-->
            </div>
          </div>
        </div>
