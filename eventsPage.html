@@ -1,3 +1,17 @@
+<?php
+
+	$mysqli = 
+	
+	$selectEvents = 'SELECT eventTitle from eventInfo;'
+	$selectVEvents = 'SELECT eventTitle from eventInfo where category="viterbi";'
+	$selectFEvents = 'SELECT eventTitle from eventInfo where category="freefood";'
+	
+	$allEvents = $mysqli->query($selectEvents);
+	$VEvents = $mysqli->query($selectVEvents);
+	$FEvents = $mysqli->query($selectFEvents);
+	
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -72,15 +86,13 @@
 		           <div id="accordian-one" class="panel-collapse collapse in">
 			           <div class="panel-body">
 			       	     <ul>
-                    <li>TrojanHackthon</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
+						 <?php
+							$allEventsArray = $allEvents->fetch_assoc();
+							for ($i=0; $i < $allEvents->num_rows(); $i++){
+								<li>$allEventsArray[i]</li>
+							}	
+						?>
+						</ul>
 			           </div>
 		           </div>
 	            </div>
