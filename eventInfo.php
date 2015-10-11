@@ -6,7 +6,6 @@ $selectEvent = 'SELECT * from events where event_id = "110"';
 $eventInfo = $conn->query($selectEvent);
 $eventrow = $eventInfo->fetch_row();
 $category = $eventInfo["event_category"];
-$eventType = $eventInfo["event_type"];
 $location = $eventInfo["event_loc"];
 $desc = $eventInfo["event_desc"];
 $link = $eventInfo["event_link"];
@@ -28,11 +27,7 @@ $link = $eventInfo["event_link"];
                                 <label class="control-label col-md-3">Category:</label>
                                 <label class="control-label col-md-9">$category</label>
                         </div>
-                        <div class="form-group">
-                                <label class="control-label col-md-3">Event Type:</label>
-                                <label class="control-label col-md-9">$eventType</label>
-                        </div>
-
+                       
                         <div class="form-group">
                                 <label class="control-label col-md-3">Location:</label>
                                 <label class="control-label col-md-9">$location</label>
