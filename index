@@ -1,188 +1,137 @@
-<!DOCTYPE html>
+<?xml version='1.0' encoding='utf-8'?>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-   <link rel='stylesheet' href="./styles/bootstrap.min.css">
-   <style>
-     body {
-       padding-top: 70px;
-     }
-   </style>
-   <title>Trojan Fever</title>
-</head>
-<body>
-   <nav class="navbar navbar-default navbar-fixed-top">
-     <div class="container">
-       <div class="navbar-header">
-         <a href="/Index.html" class="navbar-brand">Trojan Fever</a>
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
-           <span class="sr-only">Events</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-       </div>
-       <div class="collapse navbar-collapse" id="hamburger-navigation">
-         <div class="navbar-text navbar-right">
-           <a class="navbar-link" href="URL here">
-             List your event+
-           </a>
-         </div>
-         <ul class="nav navbar-nav" role="menu">
-           <li><a href="#" class="active">Events</a><span class="sr-only">current</span></li>
-           <li><a href="#">Browse</a></li>
-           <li class="dropdown">
-             <a class="dropdown-toggle" role="button" data-toggle="dropdown">More<span class="caret" /></a>
-             <ul class="dropdown-menu">
-               <li><a href="#">XXXX</a></li>
-               <li><a href="#">YYYY</a></li>
-             </ul>
-           </li>
-         </ul>
-       </div>
-     </div>
-   </nav>
+  <head>
+    <title>Login/Sign-In</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
 
-   <div class="container">
-     <div class="row">
-       <div class="col-md-10">
-         <!-- Tabs -->
-         <h2>Best new events, every day</h2>
-         <ul class="nav nav-tabs" role="tablist">
-           <li class="active"><a href="#allcategories" role="tab" data-toggle="tab">All categories</a></li>
-           <li><a href="#alltypes" role="tab" data-toggle="tab">All types</a></li>
-           <li><a href="#free" role="tab" data-toggle="tab">Free</a></li>
-           <li><a href="#paid" role="tab" data-toggle="tab">Paid</a></li>
-         </ul>
+    <div class="logmod">
+  <div class="logmod__wrapper">
+    <span class="logmod__close">Close</span>
+    <div class="logmod__container">
+      <ul class="logmod__tabs">
+        <li data-tabtar="lgm-2"><a href="#">Login</a></li>
+        <li data-tabtar="lgm-1"><a href="#">Sign Up</a></li>
+      </ul>
+      <div class="logmod__tab-wrapper">
+      <div class="logmod__tab lgm-1">
+        <div class="logmod__heading">
+          <span class="logmod__heading-subtitle">Enter your personal details <strong>to create an acount</strong></span>
+        </div>
+        <div class="logmod__form">
        
-         <!-- Tab content -->
-         <div class="tab-content">
-           <div class="active tab-pane fade in" id="allcategories">
-            <!--accordian-->
-             <div class="panel-group" id="accordian">
-	             <div class="panel panel-default">
-		            <div class="panel-heading">
-			            <h4 class="panel-title">
-				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
-					           Today Oct 10th
-				            </a>
-			           </h4>
-		            </div>
-		           <div id="accordian-one" class="panel-collapse collapse in">
-			           <div class="panel-body">
-			       	     <ul>
-                    <li>TrojanHackthon</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
-			           </div>
-		           </div>
-	            </div>
+            <!-- The first form -->
+            
+            <form class="simform" action="signUp.php" method="post" accept-charset="utf-8" action="#">
+            <div class="sminputs">
+              <div class="input full">
+                <label class="string optional" for="user-name">Email*</label>
+                <input class="string optional" maxlength="255" type="email" name="emailid" id="user-email" placeholder="Email" size="50"/>
+              </div>
+            </div>
+            <div class="sminputs">
+              <div class="input string optional">
+                <label class="string optional" for="user-pw">Password *</label>
+                <input class="string optional" maxlength="255" type="text" name="pwd" id="user-pw" placeholder="Password" size="50"/>
+              </div>
+              <div class="input string optional">
+                <label class="string optional" for="user-pw-repeat">Repeat password *</label>
+                <input class="string optional" maxlength="255" type="text" name="rptpwd" id="user-pw-repeat" placeholder="Repeat password" size="50"/>
+              </div>
+            </div>
+            <div class="simform__actions">
+              <button class="sumbit" name="commit" value="Create Account" type="sumbit"/>
+              <span class="simform__actions-sidetext">By creating an account you agree to our <a class="special" target="_blank" href="#" role="link">Terms &amp; Privacy</a></span>
+            </div> 
+          </form>
+            
+            
+        </div> 
+        <div class="logmod__alter">
+          <div class="logmod__alter-container">
+            <a class="connect facebook" href="#">
+              <div class="connect__icon">
+                
+              </div>
+              <div class="connect__context">
+                <span>Create an account with <strong>Facebook</strong></span>
+              </div>
+            </a>
               
-             </div>
-           </div>
-          <!--accordian-->
-           <div class="tab-pane" id="alltypes">
-          <!--accordian-->
-             <div class="panel-group" id="accordian">
-	             <div class="panel panel-default">
-		            <div class="panel-heading">
-			            <h4 class="panel-title">
-				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
-					           Today Oct 10th
-				            </a>
-			           </h4>
-		            </div>
-		           <div id="accordian-one" class="panel-collapse collapse in">
-			           <div class="panel-body">
-			       	     <ul>
-                    <li>Silicon Beach</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
-			           </div>
-		           </div>
-	            </div>
-             </div>
-           </div>
-          <!--accordian-->
-           <div class="tab-pane" id="free">
-          <!--accordian-->
-             <div class="panel-group" id="accordian">
-	             <div class="panel panel-default">
-		            <div class="panel-heading">
-			            <h4 class="panel-title">
-				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
-					           Today Oct 10th
-				            </a>
-			           </h4>
-		            </div>
-		           <div id="accordian-one" class="panel-collapse collapse in">
-			           <div class="panel-body">
-			       	     <ul>
-                    <li>Steven Innovation showcase</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
-			           </div>
-		           </div>
-	            </div>
-             </div>
-           </div>
-          <!--accordian-->
-           <div class="tab-pane" id="paid">
-            <!--accordian-->
-             <div class="panel-group" id="accordian">
-	             <div class="panel panel-default">
-		            <div class="panel-heading">
-			            <h4 class="panel-title">
-				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
-					           Today Oct 10th
-				            </a>
-			           </h4>
-		            </div>
-		           <div id="accordian-one" class="panel-collapse collapse in">
-			           <div class="panel-body">
-			       	     <ul>
-                    <li>UCLA Hackthon</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
-			           </div>
-		           </div>
-	            </div>
-             </div>
-           </div>
-          <!--accordian-->
-           </div>
-         </div>
-       </div>
-      
-     </div>
-   </div>
-  
- <!-- content -->
- 
-   <script src="Scripts/jquery-2.1.4.min.js"></script>
-   <script src="Scripts/bootstrap.min.js"></script>
-</body>
-</html>
+            <a class="connect googleplus" href="#">
+              <div class="connect__icon">
+                
+              </div>
+              <div class="connect__context">
+                <span>Create an account with <strong>Google+</strong></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="logmod__tab lgm-2">
+        <div class="logmod__heading">
+          <span class="logmod__heading-subtitle">Enter your email and password <strong>to sign in</strong></span>
+        </div> 
+        <div class="logmod__form">
+            
+            <!-- Login form -->
+            
+          <form class="simform" accept-charset="utf-8" action="Login.php" method="post">
+            <div class="sminputs">
+              <div class="input full">
+                <label class="string optional" for="user-name">Email*</label>
+                <input class="string optional" maxlength="255" type="email" id="user-email" name="emailid" placeholder="Email" size="50"/>
+              </div>
+            </div>
+            <div class="sminputs">
+              <div class="input full">
+                <label class="string optional" for="user-pw">Password *</label>
+                <input class="string optional" maxlength="255" type="password" id="user-pw" name="userpasswd" placeholder="Password" size="50"/>
+                						<span class="hide-password">Show</span>
+              </div>
+            </div>
+            <div class="simform__actions">
+                <button class="sumbit" name="commit" value="Log In" type="sumbit">Log in </button>
+            </div> 
+          </form>
+            
+            
+            
+        </div> 
+        <div class="logmod__alter">
+          <div class="logmod__alter-container">
+            <a class="connect facebook" href="#">
+              <div class="connect__icon">
+                
+              </div>
+              <div class="connect__context">
+                <span>Sign in with <strong>Facebook</strong></span>
+              </div>
+            </a>
+            <a class="connect googleplus" href="#">
+              <div class="connect__icon">
+                
+              </div>
+              <div class="connect__context">
+                <span>Sign in with <strong>Google+</strong></span>
+              </div>
+            </a>
+          </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script src="index.js"></script>
+
+    
+
+</body></html>
