@@ -11,7 +11,6 @@
 
     <div class="logmod">
   <div class="logmod__wrapper">
-    <span class="logmod__close">Close</span>
     <div class="logmod__container">
       <ul class="logmod__tabs">
         <li data-tabtar="lgm-2"><a href="#">Login</a></li>
@@ -44,8 +43,7 @@
               </div>
             </div>
             <div class="simform__actions">
-              <button class="sumbit" name="commit" value="Create Account" type="sumbit"/>
-              <span class="simform__actions-sidetext">By creating an account you agree to our <a class="special" target="_blank" href="#" role="link">Terms &amp; Privacy</a></span>
+                <button class="sumbit" name="commit" value="Create Account" type="sumbit">Create Account </button>
             </div> 
           </form>
             
@@ -53,7 +51,7 @@
         </div> 
         <div class="logmod__alter">
           <div class="logmod__alter-container">
-            <a class="connect facebook" href="#">
+            <a class="connect facebook" href="https://www.facebook.com/">
               <div class="connect__icon">
                 
               </div>
@@ -105,7 +103,7 @@
         </div> 
         <div class="logmod__alter">
           <div class="logmod__alter-container">
-            <a class="connect facebook" href="#">
+            <a class="connect facebook" href="https://www.facebook.com/">
               <div class="connect__icon">
                 
               </div>
