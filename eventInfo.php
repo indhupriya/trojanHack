@@ -5,7 +5,7 @@ $eventType = "asgads";
 $location = "assdsh";
 $desc = "asdhahh";
 $link = "ahashash";
-
+$eventName = "EVENT";
 ?>
 
 
@@ -13,6 +13,14 @@ $link = "ahashash";
 <head>
 	<title>Event Info</title
 	<link rel='stylesheet' href='./styles/bootstrap.min.css' />	
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
 </head>
 <body>
 	<div class="container">
@@ -26,6 +34,11 @@ $link = "ahashash";
                         <div class="form-group">
                                 <label class="control-label col-md-3">Event Type:</label>
                                 <label class="control-label col-md-9"><?php echo "$eventType" ?></label>
+                        </div>
+                        
+                        <div class="form-group">
+                                <label class="control-label col-md-3">Event Name:</label>
+                                <label class="control-label col-md-9"><?php echo "$eventName" ?></label>
                         </div>
 
                         <div class="form-group">
@@ -49,9 +62,10 @@ $link = "ahashash";
                                 </div>
 								
                         </div>
+                    
                         <div class="form-group">
-				<div class="col-md-9">
-					<textarea></textarea>
+				<div class="col-md-12">
+					<textarea rows="10" cols="50"></textarea>
 				</div>
 			</div>
 						
