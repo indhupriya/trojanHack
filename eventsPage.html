@@ -100,34 +100,6 @@
              </div>
            </div>
           <!--accordian-->
-           <div class="tab-pane" id="alltypes">
-          <!--accordian-->
-             <div class="panel-group" id="accordian">
-	             <div class="panel panel-default">
-		            <div class="panel-heading">
-			            <h4 class="panel-title">
-				            <a data-toggle="collapse" data-parent="#accordian" href="#accordian-one">
-					           Today Oct 10th
-				            </a>
-			           </h4>
-		            </div>
-		           <div id="accordian-one" class="panel-collapse collapse in">
-			           <div class="panel-body">
-			       	     <ul>
-                    <li>Silicon Beach</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                   </ul>
-			           </div>
-		           </div>
-	            </div>
-             </div>
-           </div>
           <!--accordian-->
            <div class="tab-pane" id="free">
           <!--accordian-->
@@ -143,14 +115,12 @@
 		           <div id="accordian-one" class="panel-collapse collapse in">
 			           <div class="panel-body">
 			       	     <ul>
-                    <li>Steven Innovation showcase</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <?php
+                            while($allEventsArray = $VEvents->fetch_assoc()) {
+							//for ($i=0; $i < $allEventsArray->num_rows(); $i++){
+							 echo "<li>$allEventsArray[0]</li>";
+							}	
+						?>
                    </ul>
 			           </div>
 		           </div>
@@ -172,14 +142,12 @@
 		           <div id="accordian-one" class="panel-collapse collapse in">
 			           <div class="panel-body">
 			       	     <ul>
-                    <li>UCLA Hackthon</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <?php
+                            while($allEventsArray = $FEvents->fetch_assoc()) {
+							//for ($i=0; $i < $allEventsArray->num_rows(); $i++){
+							 echo "<li>$allEventsArray[0]</li>";
+							}	
+						?>
                    </ul>
 			           </div>
 		           </div>
