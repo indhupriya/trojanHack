@@ -1,14 +1,14 @@
 <?php
 
-	$mysqli = 
+	require_once("dbDetails.php"); 
 	
-	$selectEvents = 'SELECT eventTitle from eventInfo;'
-	$selectVEvents = 'SELECT eventTitle from eventInfo where category="viterbi";'
-	$selectFEvents = 'SELECT eventTitle from eventInfo where category="freefood";'
+	$selectEvents = 'SELECT event_name from events;';
+	$selectVEvents = 'SELECT event_name from events where category="viterbi";';
+	$selectFEvents = 'SELECT event_name from events where category="freefood";';
 	
-	$allEvents = $mysqli->query($selectEvents);
-	$VEvents = $mysqli->query($selectVEvents);
-	$FEvents = $mysqli->query($selectFEvents);
+	$allEvents = $conn->query($selectEvents);
+	$VEvents = $conn->query($selectVEvents);
+	$FEvents = $conn->query($selectFEvents);
 	
 ?>
 
@@ -64,10 +64,10 @@
          <!-- Tabs -->
          <h2>Best new events, every day</h2>
          <ul class="nav nav-tabs" role="tablist">
-           <li class="active"><a href="#allcategories" role="tab" data-toggle="tab">All categories</a></li>
-           <li><a href="#alltypes" role="tab" data-toggle="tab">All types</a></li>
-           <li><a href="#free" role="tab" data-toggle="tab">Free</a></li>
-           <li><a href="#paid" role="tab" data-toggle="tab">Paid</a></li>
+           <li class="active"><a href="#allcategories" role="tab" data-toggle="tab">All Categories</a></li>
+           <li><a href="#alltypes" role="tab" data-toggle="tab">Vitterbi Events</a></li>
+           <li><a href="#free" role="tab" data-toggle="tab">Free Food</a></li>
+           <li><a href="#paid" role="tab" data-toggle="tab">Paid Events</a></li>
          </ul>
        
          <!-- Tab content -->
@@ -87,9 +87,9 @@
 			           <div class="panel-body">
 			       	     <ul>
 						 <?php
-							$allEventsArray = $allEvents->fetch_assoc();
-							for ($i=0; $i < $allEvents->num_rows(); $i++){
-								<li>$allEventsArray[i]</li>
+                            while($allEventsArray = $allEvents->fetch_assoc()) {
+							//for ($i=0; $i < $allEventsArray->num_rows(); $i++){
+							 echo "<li>$allEventsArray[0]</li>";
 							}	
 						?>
 						</ul>
