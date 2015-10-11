@@ -1,14 +1,13 @@
 <?php
-	
-request_once("dbDetails.php")
-	
-$selectEvent = 'SELECT * from events where event_id = "110"';
+
+require_once("dbDetails.php");
+$selectEvent = 'SELECT * from events where event_id = 1110';
 $eventInfo = $conn->query($selectEvent);
-$eventrow = $eventInfo->fetch_row();
-$category = $eventInfo["event_category"];
-$location = $eventInfo["event_loc"];
-$desc = $eventInfo["event_desc"];
-$link = $eventInfo["event_link"];
+$eventrow = $eventInfo->fetch_assoc();
+$category = $eventrow["EVENT_CATEGORY"];
+$location = $eventrow["event_loc"];
+$desc = $eventrow["EVENT_DESC"];
+$link = $eventrow["EVENT_URL"];
 
 ?>
 
@@ -17,28 +16,35 @@ $link = $eventInfo["event_link"];
 <head>
 	<title>Event Info</title
 	<link rel='stylesheet' href='./styles/bootstrap.min.css' />	
+         <link rel='stylesheet' href="./css/bootstrap.min.css">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+  
 </head>
 <body>
+
 	<div class="container">
 				<h1>Event Profile</h1>
                 <form role="form" class="form-horizantal" action="index.html" method="post">
 
                         <div class="form-group">
                                 <label class="control-label col-md-3">Category:</label>
-                                <label class="control-label col-md-9">$category</label>
+                                <label class="control-label col-md-9"><?php echo"$category" ?></label>
                         </div>
                        
                         <div class="form-group">
                                 <label class="control-label col-md-3">Location:</label>
-                                <label class="control-label col-md-9">$location</label>
+                                <label class="control-label col-md-9"><?php echo"$location" ?></label>
                         </div>
                         <div class="form-group">
                                 <label class="control-label col-md-3">Description:</label>
-                                <label class="control-label col-md-9">$desc</label>
+                                <label class="control-label col-md-9"><?php echo"$desc" ?></label>
                         </div>
 						 <div class="form-group">
                                 <label class="control-label col-md-3">Link:</label>
-                                <label class="control-label col-md-9">$link</label>
+                                <label class="control-label col-md-9"><?php echo"$link" ?></label>
                         </div>
                         <div class="form-group">
 								<div class="col-md-6">
@@ -51,7 +57,7 @@ $link = $eventInfo["event_link"];
                         </div>
 						<div class="form-group">
 								<div class="col-md-9">
-										<textarea></textarea>
+										<textarea rows="07" cols="35"></textarea>
 								</div>
 						</div>
 						 <div class="form-group">
