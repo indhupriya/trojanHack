@@ -1,10 +1,15 @@
 <?php
 	
-$category = "sgadsg";
-$eventType = "asgads";
-$location = "assdsh";
-$desc = "asdhahh";
-$link = "ahashash";
+request_once("dbDetails.php")
+	
+$selectEvent = 'SELECT * from events where event_id = "110"';
+$eventInfo = $conn->query($selectEvent);
+$eventrow = $eventInfo->fetch_row();
+$category = $eventInfo["event_category"];
+$eventType = $eventInfo["event_type"];
+$location = $eventInfo["event_loc"];
+$desc = $eventInfo["event_desc"];
+$link = $eventInfo["event_link"];
 
 ?>
 
