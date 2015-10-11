@@ -50,10 +50,18 @@ $link = "ahashash";
 								
                         </div>
                         <div class="form-group">
-								<div class="col-md-9">
-										<textarea></textarea>
-								</div>
-						</div>
+				<div class="col-md-9">
+					<textarea></textarea>
+				</div>
+			</div>
+						
+			<div class="form-group">
+				<div class="col-md-6">
+                                        <button type="btn" class="btn btn-success" name="back">Submit</button>
+                                </div>
+                         
+								
+                        </div>
 
                 </form>
 		<script src='/scripts/jquery-2.1.4.min.js'></script>
